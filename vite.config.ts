@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Currently_Price/',
+  base: '/Currency_Price/',
   build: {
     outDir: 'dist',
     sourcemap: false,
