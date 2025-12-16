@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+Sitemap: https://mesbahzadeh.github.io/Currently_Price/sitemap.xml

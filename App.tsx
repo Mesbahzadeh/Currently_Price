@@ -36,7 +36,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col font-[Vazirmatn]">
+    <div className="min-h-screen flex flex-col font-[Vazirmatn] overflow-x-hidden"> 
       <Header />
       
       <main className="flex-grow container mx-auto px-4 py-8">

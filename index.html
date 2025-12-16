@@ -1,39 +1,146 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa-IR" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>نرخ روز | قیمت لحظه‌ای ارز، طلا و سکه</title>
-    <meta name="description" content="مرجع قیمت لحظه‌ای دلار، یورو، سکه و ارزهای دیجیتال. تحلیل هوشمند بازار با هوش مصنوعی." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- عنوان اصلی با کلمات کلیدی -->
+    <title>نرخ روز | قیمت لحظه‌ای دلار، یورو، طلا، سکه و ارزهای دیجیتال | بازار آزاد</title>
+    
+    <!-- متا تگ‌های اصلی SEO -->
+    <meta name="description" content="📈 رصد لحظه‌ای قیمت‌های بازار: دلار، یورو، طلا، سکه، بیت‌کوین، اتریوم و دیگر ارزهای دیجیتال. تحلیل هوشمند بازار با هوش مصنوعی و نمودارهای پیشرفته." />
+    <meta name="keywords" content="قیمت دلار, قیمت یورو, قیمت طلا, قیمت سکه, قیمت بیت کوین, نرخ ارز, بازار آزاد, قیمت لحظه ای, نرخ روز, ارز دیجیتال, قیمت تتر, تحلیل بازار, هوش مصنوعی, مالی, سرمایه گذاری, بورس, بازار سرمایه" />
+    <meta name="author" content="مهران مصباح زاده" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mesbahzadeh.github.io/Currently_Price/" />
+    
+    <!-- Open Graph برای شبکه‌های اجتماعی -->
+    <meta property="og:title" content="نرخ روز | قیمت لحظه‌ای بازار ارز، طلا و ارز دیجیتال" />
+    <meta property="og:description" content="پلتفرم هوشمند رصد لحظه‌ای بازارهای مالی ایران با تحلیل هوش مصنوعی" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mesbahzadeh.github.io/Currently_Price/" />
+    <meta property="og:image" content="https://mesbahzadeh.github.io/Currently_Price/og-image.png" />
+    <meta property="og:locale" content="fa_IR" />
+    <meta property="og:site_name" content="نرخ روز" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="نرخ روز | قیمت لحظه‌ای بازار" />
+    <meta name="twitter:description" content="رصد هوشمند بازارهای مالی ایران" />
+    <meta name="twitter:image" content="https://mesbahzadeh.github.io/Currently_Price/twitter-image.png" />
+    
+    <!-- ساختار داده‌های ساخت یافته (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "نرخ روز - قیمت لحظه‌ای بازار",
+      "description": "پلتفرم هوشمند رصد لحظه‌ای قیمت دلار، یورو، طلا، سکه و ارزهای دیجیتال",
+      "url": "https://mesbahzadeh.github.io/Currently_Price/",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "author": {
+        "@type": "Person",
+        "name": "مهران مصباح زاده",
+        "url": "https://github.com/Mesbahzadeh"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "IRR"
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2024-01-15"
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/Currently_Price/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Currently_Price/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Currently_Price/favicon-32x32.png">
+    
+    <!-- Preconnect برای بهبود سرعت -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <!-- فونت Vazirmatn -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              'vazir': ['Vazirmatn', 'sans-serif'],
-            }
-          }
-        }
-      }
-    </script>
     
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
-    
+    <!-- استایل‌های سفارشی -->
     <style>
+      /* Base Styles */
       * {
-        font-family: 'Vazirmatn', sans-serif;
+        font-family: 'Vazirmatn', system-ui, sans-serif;
+        box-sizing: border-box;
       }
+      
       body {
         margin: 0;
         padding: 0;
-        background-color: #f3f4f6;
+        background-color: #f3f4f6; /* همان رنگ اصلی شما */
+        min-height: 100vh;
         direction: rtl;
+        text-align: right;
+        color: #1f2937;
+        line-height: 1.6;
+      }
+      
+      /* Enhanced Loading */
+      .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #f3f4f6; /* مطابق با پس‌زمینه اصلی */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgba(59, 130, 246, 0.3);
+        border-radius: 50%;
+        border-top-color: #3b82f6;
+        animation: spin 1s ease-in-out infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      /* Accessibility */
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+      
+      /* SEO Hidden Content - نمایش داده نمی‌شود اما برای موتورهای جستجو قابل خواندن است */
+      .seo-content {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
       }
       
       /* Custom Scrollbar */
@@ -43,6 +150,7 @@
       }
       ::-webkit-scrollbar-track {
         background: #f1f1f1; 
+        border-radius: 4px;
       }
       ::-webkit-scrollbar-thumb {
         background: #cbd5e1; 
@@ -50,6 +158,11 @@
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #94a3b8; 
+      }
+      
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
       }
       
       /* Marquee animation */
@@ -62,28 +175,62 @@
         display: inline-block;
         padding-left: 100%;
       }
-      
-      /* Loading animation */
-      .loading-spinner {
-        border: 4px solid rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        border-top: 4px solid #3498db;
-        width: 40px;
-        height: 40px;
-        animation: spin 1s linear infinite;
-      }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
     </style>
   </head>
+  
+
+
+
+
+
+
+  
   <body>
-    <!-- Loading fallback -->
-    <div id="loading" style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+
+<!-- محتوای SEO - مخفی برای کاربران، قابل مشاهده برای موتورهای جستجو -->
+<div class="seo-text" aria-hidden="true" style="
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  position: absolute;
+  pointer-events: none;
+">
+  <h1>نرخ روز - قیمت لحظه‌ای بازار ارز، طلا و سکه</h1>
+  <h2>رصد هوشمند بازارهای مالی ایران</h2>
+  <p>نرخ روز یک پلتفرم پیشرفته برای رصد لحظه‌ای قیمت‌های بازار است. در این وب‌سایت شما می‌توانید قیمت دلار، قیمت یورو، قیمت طلا، قیمت سکه، قیمت بیت‌کوین، قیمت اتریوم و سایر ارزهای دیجیتال را به صورت لحظه‌ای مشاهده کنید. ابزار تحلیل هوشمند با هوش مصنوعی، نمودارهای پیشرفته و اخبار لحظه‌ای بازار در اختیار شماست.</p>
+  <h3>خدمات نرخ روز:</h3>
+  <ul>
+    <li>قیمت لحظه‌ای دلار آزاد</li>
+    <li>قیمت لحظه‌ای یورو آزاد</li>
+    <li>قیمت طلای 18 عیار</li>
+    <li>قیمت سکه تمام بهار آزادی</li>
+    <li>قیمت بیت‌کوین (Bitcoin)</li>
+    <li>قیمت اتریوم (Ethereum)</li>
+    <li>قیمت تتر (USDT)</li>
+    <li>تحلیل هوش مصنوعی بازار</li>
+    <li>پیش‌بینی روند بازار</li>
+    <li>نمودارهای تعاملی</li>
+  </ul>
+  <p>برای سرمایه‌گذاری در بازار ارز، خرید و فروش طلا و سکه، معامله ارزهای دیجیتال و تحلیل بازارهای مالی از نرخ روز استفاده کنید. بهترین ابزار برای معامله‌گران، سرمایه‌گذاران و علاقه‌مندان به بازارهای مالی.</p>
+  <h4>کلمات کلیدی مرتبط:</h4>
+  <p>قیمت دلار امروز، قیمت یورو امروز، قیمت سکه امروز، قیمت طلا امروز، قیمت بیت‌کوین امروز، نرخ ارز آزاد، قیمت تتر، بازار آزاد تهران، تحلیل تکنیکال، اخبار بازار، پیش‌بینی قیمت دلار، سرمایه گذاری در طلا، خرید ارز دیجیتال، صرافی آنلاین، تبدیل ارز، ماشین حساب مالی، ابزار معاملاتی، پلتفرم مالی، برنامه مالی، اپلیکیشن بازار</p>
+</div>
+
+
+
+
+
+    <!-- Loading Screen -->
+    <div id="loading" class="loading-overlay">
       <div class="loading-spinner"></div>
-      <p style="margin-right: 15px; color: #666;">در حال بارگذاری...</p>
+      <div class="mt-6 text-center" style="color: #1f2937;">
+        <h2 class="text-2xl font-bold mb-2">نرخ روز</h2>
+        <p class="text-lg opacity-90">در حال بارگذاری اطلاعات بازار...</p>
+        <p class="text-sm opacity-75 mt-4">قیمت لحظه‌ای دلار، یورو، طلا، سکه و ارزهای دیجیتال</p>
+      </div>
     </div>
+    
     
     <div id="root"></div>
     
