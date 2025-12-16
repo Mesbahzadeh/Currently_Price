@@ -3,9 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://mesbahzadeh.github.io/Currently_Price",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "export": "next export", 
     "preview": "vite preview"
   },
   "dependencies": {
