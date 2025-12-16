@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="fa" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <title>Redirecting...</title>
-  <script>
-    sessionStorage.redirect = location.pathname;
-  </script>
-  <meta http-equiv="refresh" content="0;URL='/Currently_Price'">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نرخ روز - صفحه اصلی</title>
+    <script>
+        // Redirect to main page
+        sessionStorage.redirect = location.pathname;
+        location.replace('/Currently_Price/');
+    </script>
 </head>
-<body></body>
+<body>
+    <noscript>
+        <h1>لطفاً جاوااسکریپت را فعال کنید</h1>
+        <p>برای استفاده از نرخ روز نیاز به فعال بودن جاوااسکریپت دارید.</p>
+    </noscript>
+</body>
 </html>
